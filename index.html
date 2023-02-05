@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <title>ToDO</title>
+</head>
+<body>
+   <div class="to-do">
+      <header class="to-do__header">
+         <h1 class="to-do__title">ToDo List <span class="js">Java<span class="white--text">Script</span></span></h1>
+   </header>
+   <div class="to-do__get">
+      <input type="text" class="to-do__get-input" placeholder="Введите текст">
+      <button class="to-do__get-btn to-do__btn">+</button>
+   </div>
+   <section class="to-do__tasks">
+      <h2 class="to-do__sub-title to-do__tasks-title">Задачи:</h2>
+     <div class="list-box">
+      <ul class="to-do__tasks-list to-do__list">
+      </ul>
+     </div>
+   </section>
+   <section class="to-do__tasks">
+      <h2 class="to-do__sub-title to-do__tasks-title">Выполнено:</h2>
+     <div class="list-box">
+      <ul class="to-do__checked-list to-do__list">
+      </ul>
+     </div>
+   </section>
+   </div>
+   <script src="script.js"></script>
+</body>
+</html>

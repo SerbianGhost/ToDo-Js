@@ -1,0 +1,254 @@
+*{
+   padding: 0;
+   margin: 0;
+}
+html,body{
+   width: 100%;
+   height: 100%;
+   font-size: calc(100vw/2560 * 10);
+   background-color: black;
+   padding: 0.5rem 0;
+}
+.to-do__list::-webkit-scrollbar {
+   width: 0.5rem;               
+ }
+ .to-do__list::-webkit-scrollbar-track {
+   background: transparent       
+ }
+ .to-do__list::-webkit-scrollbar-thumb {
+   background-color: rgb(172, 169, 169);   
+   border-radius: 2rem;       
+}
+.to-do{
+   width: 90%;
+   height: 100%;
+   margin: 0 auto;
+   background-color: aliceblue;
+   border-radius: 1rem;
+   padding-bottom: 1rem;
+}
+.to-do__btn{
+   background-color: yellow;
+   border: none;
+   color: black;
+   cursor: pointer;
+   transition: all ease 1s;
+   border-radius: 1rem;
+   padding: 0 1rem;
+}
+.to-do__btn:hover{
+   color: yellow;
+   background-color: black;
+}
+.to-do__sub-title{
+   text-align: center;
+   font-size: 4rem;
+   background-color: yellow;
+   border-bottom: 0.1px solid #000;
+}
+.to-do__header{
+   background-color: yellow;
+   padding: 1rem;
+   border-radius: 1rem 1rem 0 0;
+}
+.to-do__title{
+   font-size: 5rem;
+}
+.js{
+   font-size: 3rem;
+   margin-left: 1rem;
+}
+.white--text{
+   color: white;
+}
+.to-do__get{
+   padding: 2rem;
+   display: flex;
+   align-items: center;
+}
+.to-do__get-input{
+   padding: 0.5rem 1rem;
+   border-radius: 0.5rem;
+   border: 0.1rem solid black;
+
+}
+.to-do__get-btn{
+   margin-left: 1rem;
+   font-size: 2.5rem;
+}
+
+.to-do__tasks{
+   border: 0.1rem solid black;
+   border-radius: 1rem;
+   width: 80%;
+   margin: 0 auto;
+   overflow-y: hidden;
+   background-color: white;
+}
+.list-box{
+   padding-bottom: 1rem;
+   
+}
+.to-do__list{
+   height: 15rem;
+   overflow-y: scroll;
+}
+
+.to-do__tasks:not(:first-child){
+   margin-top: 3rem;
+}
+.to-do__tasks-title{
+
+}
+.to-do__checked-list{
+   opacity: 0.5;
+}
+
+.task{
+   width: 90%;
+   margin: 0 auto;
+   padding: 1rem;
+   display: flex;
+   align-self:center;
+   justify-content: space-between;
+   font-size: 4rem;
+}
+.task-content{
+   display: flex;
+   align-items: center;
+}
+.task-text{
+}
+.task-label{
+   margin-right: 0.8rem;
+}
+.check-fake{
+   display: block;
+   border: 1px solid gray;
+   width: 3rem;
+   height: 3rem;
+   border-radius: 0.5rem;
+   position: relative;
+   cursor: pointer;
+}
+.check-fake::before{
+   content: '';
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   border-radius: 0.5rem;
+   background-color: yellow;
+   background-image: url(Checkmark.svg);
+   background-repeat: no-repeat;
+   opacity: 0;
+   transition: all ease-in-out 0.2s;
+}
+.check-fake::before:hover{
+}
+.task-checkbox{
+   display: none;
+}
+.task-checkbox:checked+.check-fake::before{
+   opacity: 1;
+}
+.delete{
+}
+@media(max-width:1440px){
+   html{
+      font-size: calc(100vw/1920 * 10);
+   }
+   .to-do__list{
+      height: 27rem;
+   }
+}
+@media(max-width:1200px){
+   html{
+      font-size: calc(100vw/1200 * 10);
+   }
+
+}
+@media(max-width:1201px){
+   html{
+      font-size: calc(100vw/1201 * 10);
+      padding: 0;
+   }
+   body{
+      padding: 0;
+      padding-bottom: 1rem;
+
+   }
+   .to-do{
+      border-radius: 0;
+      width: 100%;
+   }
+   .to-do__header{
+      border-radius: 0;
+   }
+   .to-do__tasks{
+      width: 95%;
+   }
+   .to-do__list{
+      height: 20rem;
+   }
+}
+@media(max-width:1046px){
+   html{
+      font-size: calc(100vw/1046 * 10);
+      padding: 0;
+   }
+   body{
+      padding: 0;
+      padding-bottom: 1rem;
+
+   }
+   .to-do{
+      border-radius: 0;
+      width: 100%;
+   }
+   .to-do__header{
+      border-radius: 0;
+   }
+   .to-do__tasks{
+      width: 95%;
+   }
+   .to-do__list{
+      height: 20rem;
+   }
+}
+@media(max-width:768px){
+   html{
+      font-size: calc(100vw/768 * 10);
+      padding: 0;
+   }
+   
+}
+@media(max-width:425px){
+   html{
+      font-size: calc(100vw/425 * 10);
+   }
+   .task{
+      font-size: 2.1rem;
+   }
+   .to-do__title{
+      font-size: 4rem;
+   }
+   .to-do__list{
+      height: 15rem;
+   }
+}
+@media(max-width:375px){
+   html{
+      font-size: calc(100vw/375 * 10);
+   }
+   .task{
+      font-size: 1.8rem;
+   }
+   .to-do__title{
+      font-size: 4rem;
+   }
+   .to-do__list{
+      height: 20rem;
+   }
+}
+
+
